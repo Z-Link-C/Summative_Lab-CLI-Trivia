@@ -31,7 +31,6 @@ export async function startGame(Questions){
 
                 const qstn = Questions[num];
                 const answer = await select({
-                    //message should show Timer but in minutes and seconds instead of just seconds.
                     message:qstn.question,
                     choices:qstn.choices
                 });
